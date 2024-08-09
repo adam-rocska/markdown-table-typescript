@@ -1,6 +1,6 @@
 {
   "name": "@adam-rocska/markdown-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library with a simple API for generating Markdown tables.",
   "keywords": [
     "markdown",
