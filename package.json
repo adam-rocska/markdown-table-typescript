@@ -74,7 +74,8 @@
       "node_modules"
     ],
     "moduleNameMapper": {
-      "@adam-rocska/markdown-table": "<rootDir>/src/index.ts"
+      "@adam-rocska/markdown-table": "<rootDir>/src/index.ts",
+      "!(.*)": "<rootDir>/$1"
     },
     "transform": {
       "^.+\\.(t|j)sx?$": [
