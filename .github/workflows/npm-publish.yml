@@ -32,6 +32,6 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
       - uses: pnpm/action-setup@v4
-      - run: pnpm publish --no-git-checks
+      - run: pnpm publish --no-git-checks --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
