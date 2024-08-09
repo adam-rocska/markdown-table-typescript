@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,18 +21,6 @@ jobs:
       - run: pnpm build
       - run: pnpm test
       - run: pnpm check
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-      - uses: pnpm/action-setup@v4
-      - run: pnpm install
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
