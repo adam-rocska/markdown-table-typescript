@@ -1,5 +1,8 @@
 # Markdown Table for TypeScript
 
+[![npm version](https://img.shields.io/npm/v/@adam-rocska/markdown-table)](https://www.npmjs.com/package/@adam-rocska/markdown-table)
+[![License](https://img.shields.io/npm/l/@adam-rocska/markdown-table)](https://github.com/adam-rocska/markdown-table-typescript/blob/main/LICENSE)
+
 A library with a simple API for generating Markdown tables.
 
 ## Installation
