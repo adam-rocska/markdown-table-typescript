@@ -2,11 +2,11 @@
   "name": "@adam-rocska/markdown-table",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest --env node",
+    "clean": "rimraf dist",
     "build": "bunchee",
+    "test": "jest --env node",
     "check": "pnpm eslint && pnpm attw --pack",
-    "prepublishOnly": "pnpm test && pnpm check",
-    "clean": "rimraf dist"
+    "prepublishOnly": "pnpm test && pnpm check"
   },
   "description": "A library with a simple API for generating Markdown tables.",
   "keywords": [
