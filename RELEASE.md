@@ -1,7 +1,12 @@
-# 1.0.0
+# 1.0.1
 
 Initial release.
 Enjoy.
+
+## Patch Changes
+
+* Wrestling with GitHub Actions and the `npm` CLI to get the
+  package published properly. It has no impact on the API.
 
 ## Examples
 
