@@ -27,7 +27,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adam-rocska/markdown-table-typescript"
+    "url": "https://github.com/adam-rocska/markdown-table-typescript.git"
   },
   "bugs": {
     "url": "https://github.com/adam-rocska/markdown-table-typescript/issues"
