@@ -1,13 +1,6 @@
 {
   "name": "@adam-rocska/markdown-table",
   "version": "1.0.0",
-  "scripts": {
-    "clean": "rimraf dist",
-    "build": "bunchee",
-    "test": "jest --env node",
-    "check": "pnpm eslint && pnpm attw --pack",
-    "prepublishOnly": "pnpm test && pnpm check"
-  },
   "description": "A library with a simple API for generating Markdown tables.",
   "keywords": [
     "markdown",
@@ -38,6 +31,13 @@
   },
   "bugs": {
     "url": "https://github.com/adam-rocska/markdown-table-typescript/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "bunchee",
+    "test": "jest --env node",
+    "check": "pnpm eslint && pnpm attw --pack",
+    "prepublishOnly": "pnpm test && pnpm check"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",
