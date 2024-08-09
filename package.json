@@ -1,6 +1,11 @@
 {
   "name": "@adam-rocska/markdown-table",
   "version": "1.0.0",
+  "scripts": {
+    "build": "bunchee",
+    "check": "pnpm eslint && pnpm attw --pack",
+    "clean": "rimraf dist"
+  },
   "description": "A library with a simple API for generating Markdown tables.",
   "keywords": [
     "markdown",
@@ -23,7 +28,6 @@
   "author": {
     "name": "Ádám László Rocska",
     "url": "https://adam-rocska.github.io"
-
   },
   "license": "MIT",
   "repository": {
@@ -32,5 +36,30 @@
   },
   "bugs": {
     "url": "https://github.com/adam-rocska/markdown-table-typescript/issues"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
+    "bunchee": "^5.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.5",
+    "pnpm": "^9.7.0"
+  },
+  "files": [ "dist" ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.mjs",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/es/index.d.mts",
+        "default": "./dist/es/index.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
   }
 }
