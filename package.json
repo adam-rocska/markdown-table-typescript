@@ -5,6 +5,7 @@
     "test": "jest --env node",
     "build": "bunchee",
     "check": "pnpm eslint && pnpm attw --pack",
+    "prepublishOnly": "pnpm test && pnpm check",
     "clean": "rimraf dist"
   },
   "description": "A library with a simple API for generating Markdown tables.",
