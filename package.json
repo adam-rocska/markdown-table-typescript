@@ -2,6 +2,7 @@
   "name": "@adam-rocska/markdown-table",
   "version": "1.0.0",
   "scripts": {
+    "test": "jest --env node",
     "build": "bunchee",
     "check": "pnpm eslint && pnpm attw --pack",
     "clean": "rimraf dist"
@@ -39,14 +40,19 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",
+    "@swc/jest": "^0.2.36",
+    "@types/jest": "^29.5.12",
     "bunchee": "^5.3.1",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.5.4",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
-    "pnpm": "^9.7.0"
+    "jest": "^29.7.0",
+    "pnpm": "^9.7.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
   },
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/es/index.mjs",
   "types": "./dist/cjs/index.d.ts",
@@ -61,5 +67,17 @@
         "default": "./dist/cjs/index.js"
       }
     }
-  }
+  },
+  "jest": {
+    "moduleDirectories": [ "node_modules" ],
+    "moduleNameMapper": {
+      "@adam-rocska/markdown-table": "<rootDir>/src/index.ts"
+    },
+    "transform": {
+      "^.+\\.(t|j)sx?$": [ "@swc/jest" ]
+    },
+    "testPathIgnorePatterns": [ "/node_modules/" ],
+    "testTimeout": 1000
+  },
+  "packageManager": "pnpm@9.4.0"
 }
