@@ -1,0 +1,36 @@
+{
+  "name": "@adam-rocska/markdown-table",
+  "version": "1.0.0",
+  "description": "A library with a simple API for generating Markdown tables.",
+  "keywords": [
+    "markdown",
+    "table",
+    "generator",
+    "api",
+    "library",
+    "utility",
+    "tool",
+    "module",
+    "package",
+    "npm",
+    "node",
+    "js",
+    "javascript",
+    "typescript",
+    "ts",
+    "es6"
+  ],
+  "author": {
+    "name": "Ádám László Rocska",
+    "url": "https://adam-rocska.github.io"
+
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-rocska/markdown-table-typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/adam-rocska/markdown-table-typescript/issues"
+  }
+}
