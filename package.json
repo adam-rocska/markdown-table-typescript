@@ -87,9 +87,5 @@
     ],
     "testTimeout": 1000
   },
-  "packageManager": "pnpm@9.4.0",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  }
+  "packageManager": "pnpm@9.4.0"
 }
