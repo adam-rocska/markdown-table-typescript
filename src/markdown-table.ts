@@ -9,6 +9,8 @@ export function markdownTable<
   headers: Headers,
   ...rows: FixedLengthArray<ExpressibleAsString, Headers["length"]>[]
 ): string {
+  if (rows.length === 0) rows = [headers.map(() => '') as any];
+
   const lengths = greatestLengthPerColumn(headers, ...rows);
   const pad = padCell(lengths);
 
@@ -18,6 +20,5 @@ export function markdownTable<
     ...rows.map(row => row.map(pad).join(' | '))
   ]
     .map(r => `| ${r} |`)
-    .join('\n')
-    .concat('\n\n');
+    .join('\n');
 }
