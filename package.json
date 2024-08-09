@@ -36,8 +36,7 @@
     "clean": "rimraf dist",
     "build": "bunchee",
     "test": "jest --env node",
-    "check": "pnpm eslint && pnpm attw --pack",
-    "prepublishOnly": "pnpm test && pnpm check"
+    "check": "pnpm eslint && pnpm attw --pack"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",
